@@ -1,5 +1,7 @@
 # dwm - dynamic window manager
 
+![dwm](/dwm.png)
+
 A fork of https://git.suckless.org/dwm with some changes:
 
 - Inconsolata and Go mono fonts
