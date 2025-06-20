@@ -58,19 +58,41 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class            instance        title                   tags mask   isfloating   monitor */
+
+	/* no tags */
 	{ "Gimp",          NULL,            NULL,                   0,          1,           -1 },
-	{ "firefox-esr",   "Toolkit",       "Picture-in-Picture",   ~0,         1,           -1 },
+	{ "Conky",         "Conky",         NULL,                   0,          0,           0 },
+
+	/* tag 2: work web browser */
 	{ "Google-chrome", "google-chrome", NULL,                   1 << 1,     0,           -1 },
+
+	/* tag 3: work chat */
 	{ "Slack",         "slack",         NULL,                   1 << 2,     0,           -1 },
+
+	/* tag 4: work chat */
 	{ "Firefox",       NULL,            NULL,                   1 << 3,     0,           -1 },
 	{ "firefox-esr",   "Navigator",     NULL,                   1 << 3,     0,           -1 },
+	{ "librewolf",     "Navigator",     NULL,                   1 << 3,     0,           -1 },
+
+	/* all tags: picture in picture */
+	{ "firefox-esr",   "Toolkit",       "Picture-in-Picture",   ~0,         1,           -1 },
+	{ "librewolf",     "Toolkit",       "Picture-in-Picture",   ~0,         1,           -1 },
+
+	/* tag 5: entertainment */
 	{ "vlc",           "vlc",           NULL,                   1 << 4,     1,           -1 },
-	{ "Spotify",       "spotify",       NULL,                   1 << 5,     1,           -1 },
-	{ "zoom",          "zoom",          "Zoom Meeting",         1 << 6,     0,           -1 },
-	{ "zoom",          "zoom",          "Zoom Cloud Meetings",  1 << 6,     1,           -1 },
+	{ "Spotify",       "spotify",       NULL,                   1 << 4,     1,           -1 },
+
+	/* tag 6: zoom */
+	{ "zoom",          "zoom",          "Zoom Meeting",         1 << 5,     0,           -1 },
+	{ "zoom",          "zoom",          "Zoom Cloud Meetings",  1 << 5,     1,           -1 },
+
+	/* tag 7: empty */
+
+	/* tag 8: todo list */
 	{ "st-256color",   "st-256color",   "godo",                 1 << 7,     0,           -1 },
+
+	/* tag 9: clock wall */
 	{ "st-256color",   "st-256color",   "clock",                1 << 8,     0,           -1 },
-	{ "Conky",         "Conky",         NULL,                   0,          0,           0 },
 };
 
 /* layout(s) */
