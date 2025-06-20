@@ -40,7 +40,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Go Mono:size=10", "GoMono Nerd Font Mono:style=Regular:size=10", "Inconsolata Nerd Font Mono:size=20" };
+static const char *fonts[]          = { "Go Mono:size=10", "Inconsolata Nerd Font Mono:size=20" };
 static const char dmenufont[]       = "Inconsolata Nerd Font Mono:size=24";
 
 static const char *colors[][3]      = {
